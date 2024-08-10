@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EveryThing Corporation</title>
+
+    <style>
+        body{
+            
+            background-color: #504f4f;
+
+            
+            
+        }
+        header {
+            background-color: #ebebeb;
+
+
+            width: 83em;
+            height: 3em;
+            position: fixed;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 50px;
+            padding-left: 50px;
+            box-sizing: border-box;
+            border: 4px solid;
+            border-color: #000000;
+            border-radius: 20px;
+            
+            
+        }
+
+
+        #et {
+            color: #131414;
+            font-family: 'Segoe UI', Tahoma, Arial, Verdana, sans-serif;
+            font-size: 1.3em;
+            font-weight: 750;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #0d4fbf;
+            font-size: 1.1em;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 30px;
+        }
+
+        .navigation a:hover {
+            color: #383b38;
+        }
+
+        
+        #welcome {
+            
+            padding-left: 60px;
+            padding-top: 180px;
+            font-size: 1.2em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        #service1 {
+            font-size: 2.6em;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Arial;
+            color: #2ac703;
+            padding-left: 55px;
+        }
+
+        #etname {
+            font-size: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            color: #12bd03;
+            font-weight: bold;
+        }
+
+        #discrip1 {
+            font-size: 0.9em;
+            font-weight: 800;
+            font-family: 'arial', 'Lucida Sans Regular', 'Lucida Grande';
+            color: #000000;
+            padding-left: 60px;
+        }
+
+        #title1 {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 3em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: #fcf271;
+            text-shadow: 5px 5px 10px #000000;
+            
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 5em;
+        }
+
+        .cards {
+            padding-top: 27em;
+            padding-left: 2.9em;
+        }
+
+        .card {
+            background-color: #e8e9eb;
+            width: 12em;
+            height: 17em;
+            box-shadow: 0 10px 10px #080808;
+            border: solid;
+            border-radius: 18px;
+            border-color: #15e8cf;
+            border-width: 4px;
+            transition: 0.7s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center; /* Centers the button horizontally */
+            padding-top: 2em; /* Optional: Adds space above the button */
+        }
+
+        #ys {
+            gap: 5em;
+            width: 8em;
+            height: 8em;
+            border: solid;
+            border-width: 2px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 25px #d6960d;
+            cursor: pointer;
+            position: relative;
+            transition: 0.7s ease;
+            background-color: #ffffff;
+        }
+
+        #ystext {
+            display: flex;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Arial, Verdana, sans-serif;
+            font-weight: bolder;
+            font-size: 5em;
+        }
+
+        #title2 {
+            display: flex;
+            justify-content: center;
+            padding-top: 3em;
+            padding-bottom: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: #ff0095;
+            text-shadow: 5px 5px 20px #000000;
+            
+        }
+
+        #ys:hover{
+            transform: scale(1.1);
+
+        }
+
+        #telegram{
+            background-color: #ffffff;
+            height:15em ;
+        }
+
+        
+        .container1{
+            width: 1220px;
+            height: 600px;
+            background-color: #eeeeee;
+            padding-top: 3em;
+            border: 6px solid;
+            border-color: #c7c7c7;
+            border-radius: 40px;
+            box-shadow:2px 5px 9px #000000;
+            
+        }
+
+        #bgcontainer{
+
+
+            position: absolute; /* Take it out of the document flow */
+            top: 0; /* Position it at the top */
+            left: 0; /* Position it at the left */
+            width: 1350px; /* Full width of the parent */
+            height: 710px;
+             /* Full height of the parent height: 300px;*/
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMJJmt6_apPfoONhFZZf1J_6lm_DRKhxKyRw&s'); /* Correct image path */
+            background-size: cover; /* or contain */
+            background-repeat: no-repeat;
+            filter: blur(6px);
+            z-index: -1; /* Send it to the back */
+
+        }
+
+        .container2{
+
+            width: 1220px;
+            height: 600px;
+            background-color: #eeeeee;
+            padding-top: 3em;
+            border: 6px solid;
+            border-color: #c7c7c7;
+            border-radius: 40px;
+            box-shadow:2px 5px 9px #000000;
+
+        }
+
+        .programs{
+            padding-top: 5em;
+            padding-left: 2.9em;
+            padding-bottom: 4em;
+        }
+
+        #title3{
+            padding-top: 2em;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+            padding-left: 23em;
+
+        }
+
+        .mobile1{
+            display: none;
+        }
+        
+        #title4{
+            display: flex;
+            justify-content: center;
+            padding-top: 3em;
+            padding-bottom: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: #5eff00;
+            text-shadow: 5px 5px 20px #000000;
+            padding-bottom: 2em;
+
+        }
+
+        @media (max-width:500px){
+
+            header{
+                width: 22em;
+                
+                
+                font-size: 0.9em;
+
+            }
+            #et{
+                display: none;
+            }
+            #first{
+                position: relative;
+                top: 0.6em;
+                right: 4em;
+            }
+
+            #second{
+                position: relative;
+                bottom: 0.6em;
+                left: 1.8em;
+            }
+
+            #third{
+
+                position: relative;
+                left: 1.7em;
+                bottom: 0.6em;
+                
+            }
+
+            #welcome{
+                padding-left: 1.5em;
+            }
+
+            #service1{
+                padding-left: 0.7em;
+            }
+            
+            #discrip1{
+                display: none;
+            }
+
+            .mobile1{
+                display: block;
+                
+                
+                
+            }
+            
+            .container1{
+                display: none;
+            }
+
+            
+
+            .container2{
+                display: none;
+            }
+
+            #contact1{
+                
+            }
+
+            #title4{
+                
+            }
+
+
+        }
+            
+        
+
+    </style>
+
+
+</head>
+<body>
+
+    <header>
+        <h4 id="et">EveryThing Development</h4>
+
+        <nav class="navigation">
+            <a href="#title2" title="Our programs" id="first">Programs</a>
+            <a href="#title1" title=" Our Programmers" id="second">Developers</a>
+            <a href="#contact1" title="Contact Us" id="third">Contact</a>
+        </nav>
+    </header>
+    <div id="bgcontainer"></div>
+    <section class="main">
+        <div>
+            <h3 id="welcome">Welcome to <span id="etname">EveryThing</span> corp.</h3>
+            <h1 id="service1">Apps. Development Company</h1>
+            <h4 id="discrip1">We making hard processes <span style="color: #020066;">easy</span>, <span style="color: #f0b20a;">fast</span> and <span style="color: #8f2a57;">straight forward</span></h4>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="container1" id="container11">
+          <h2 id="title1">Developers</h2>
+          <div class="content">
+            <div class="card" id="developers">
+              <div class="info">
+                <h3 style="padding-left: 2.5em; font-family: Arial, Helvetica, sans-serif;">Ahmed Ali</h3>
+                <ul>
+                  <li>CSS Coding</li>
+                  <li>From Iraq/Baghdad</li>
+                  <li>Baghdad College Student</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <div class="info">
+                <h3 style="padding-left: 1.3em; font-family: Arial, Helvetica, sans-serif;">Mustafa Ahmed</h3>
+                <ul>
+                  <li>HTML Coding</li>
+                  <li>From Iraq/Baghdad</li>
+                  <li>Baghdad College Student</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="mobile1">
+        <h2 id="title1">Developers</h2>
+        <div class="content">
+          <div class="card" id="developers">
+            <div class="info">
+              <h3 style="padding-left: 2.5em; font-family: Arial, Helvetica, sans-serif;">Ahmed Ali</h3>
+              <ul>
+                <li>CSS Coding</li>
+                <li>From Iraq/Baghdad</li>
+                <li>Baghdad College Student</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="info">
+              <h3 style="padding-left: 1.3em; font-family: Arial, Helvetica, sans-serif;">Mustafa Ahmed</h3>
+              <ul>
+                <li>HTML Coding</li>
+                <li>From Iraq/Baghdad</li>
+                <li>Baghdad College Student</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <section class="programs">
+        <div class="container2" style="width: 500;height: 500;">
+            <h2 id="title2">Our Programs</h2>
+        <div class="button-container">
+            <a href="https://www.mediafire.com/file/egk0gk9pkbg7qzq/YouTube+Vids+downloader.rar/file" style="text-decoration: none;" title="YouTube Scope" target="_blank">
+                <button id="ys"><span id="ystext">YS</span></button>
+            </a>
+        </div>
+
+        </div>
+    </section>
+    
+    <section class="mobile1">
+        <div >
+            <h2 id="title2">Our Programs</h2>
+        <div class="button-container">
+            <a href="https://www.mediafire.com/file/egk0gk9pkbg7qzq/YouTube+Vids+downloader.rar/file" style="text-decoration: none;" title="YouTube Scope" target="_blank">
+                <button id="ys"><span id="ystext">YS</span></button>
+            </a>
+        </div>
+    
+        </div>
+
+    </section>
+    
+
+    <section>
+        <h2 id="title4"><span>Contact Us</span></h2>
+        <div class="content" id="contact1">
+            <div class="card" id="telegram">
+                <div class="info">
+                    <h3 style="padding-left: 2.5em; font-family:Arial, Helvetica, sans-serif;">Telegram Channel</h3>
+                    
+                    <a href="https://t.me/+T-_707yk9zdmZDUy" target="_blank" title="Our telegram channel"><img src="data:image/png;base64,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" alt="telegram icon " width="150px" style="padding-left: 0.9em;"></a>
+
+
+                </div>
+            </div>
+            <div class="card" id="email1" style="background-color: #ffffff; height: 15em;">
+                <div class="info">
+                    <h3 style="padding-left: 3.8em; font-family:Arial, Helvetica, sans-serif;">Email</h3>
+                    
+                     
+                    <a href="mailto:everythingcorp2024@gmail.com" target="_blank" title="Our Email"><img src="data:image/png;base64,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" alt="telegram icon " width="180px" style="padding-left: 0.4em;"></a>
+
+                </div>
+            </div>
+
+         </div>   
+
+
+
+    </section>
+
+    <footer style="padding-top: 10em;">
+        <div style="background-color: #3d3c3c;width: 100%;height: 5em;margin: 0; ">
+
+            <h4 id="title3">EveryThing Dev. Corporaton Copyrights 2020-2024</h4>
+
+        </div>
+    </footer>
+
+    
+</body>
+</html>
